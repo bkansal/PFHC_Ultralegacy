@@ -130,7 +130,7 @@ void genrateplot_responsevsE_UL(TString legendname,string plot_name, bool xaxis_
     sprintf(path,"/Users/bkansal/work/Ultra_legacy/final/plots/corrected/overlay_rawwrtUL_calib/responseplots/%s_response_pt.gif",plot_name.c_str());
     sprintf(path1,"/Users/bkansal/work/Ultra_legacy/final/plots/corrected/overlay_rawwrtUL_calib/responseplots/%s_response_pt.pdf",plot_name.c_str());
     sprintf(path2,"/Users/bkansal/work/Ultra_legacy/final/plots/corrected/overlay_rawwrtUL_calib/responseplots/%s_response_pt.png",plot_name.c_str());
-    varName="response";
+    varName="response;1";
   } 
   
 
@@ -149,7 +149,9 @@ void genrateplot_responsevsE_UL(TString legendname,string plot_name, bool xaxis_
    TFile * inputfile3_ = new TFile(hname2,"READ");
    TGraph* graph1_ = (TGraph*) inputfile1_ -> Get(varName);
    TGraph* graph2_ = (TGraph*) inputfile2_ -> Get(varName);
-   TGraph* graph3_ = (TGraph*) inputfile3_ -> Get(varName);
+   TGraph* graph3_;
+   if(xaxis_pt) graph3_= (TGraph*) inputfile3_ -> Get("Graph;1");
+   else graph3_ = (TGraph*) inputfile3_ -> Get(varName);
    //  TH2F *respHisto__1 = (TH2F*) inputfile1_ -> Get("respHisto");
 
 

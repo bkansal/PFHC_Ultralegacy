@@ -1,4 +1,7 @@
-# PFHC_Ultralegacy
+A# PFHC_Ultralegacy
+
+This repository includes overlay scripts for final corrected energy responses wrt raw or only energy corrected energy responses.
+
 
 This repository includes overlay scripts for final corrected energy responses wrt raw or only energy corrected energy responses.
 ```
@@ -8,7 +11,7 @@ cd PFHC_Ultralegacy
 
 For running overlay script, use following commands :
 
-(for raw energy response wrt true energy only having UL overlay)                                                                                                                
+(for raw energy response wrt true energy only having UL overlay)
 ```
 root -l -q 'final_codes/genrateplot_responsevsE_UL.C("EH hadrons (0 < |#eta| <1.55) without correction ","EH_barrel",false,false,true)'
 root -l -q 'final_codes/genrateplot_responsevsE_UL.C("EH hadrons (1.55 < |#eta| <2.5) without correction ","EH_ec_in",false,false,true)'
@@ -47,6 +50,8 @@ root -l -q 'final_codes/genrateplot_responsevsE_UL.C("H hadrons (0 < |#eta| <1.5
 root -l -q 'final_codes/genrateplot_responsevsE_UL.C("H hadrons (1.55 < |#eta| <2.5) for Ultralegacy ","H_ec_in",false,false,false)'
 root -l -q 'final_codes/genrateplot_responsevsE_UL.C("H hadrons (2.5 < |#eta| <2.75) for Ultralegacy ","H_ec_out",false,false,false)'
 ```
+To get resolution wrt true energy, similar commands but ```final_codes/genrateplot_resovsE_UL.C``` instead of ```final_codes/genrateplot_responsevsE_UL.C``` will be used. In order to get the x axis as pT true insted of true energy, just change the third last boolean in above functions as ```true```.
+
 
 (for final Eta-Energy & Energy corrected response wrt true energy only having UL overlay)
 ```
@@ -59,3 +64,5 @@ root -l 'final_codes/genrateplot_responsevsEta_UL.C("EH hadrons","EH",true,false
 root -l 'final_codes/genrateplot_responsevsEta_UL.C("H hadrons","H",false,true)'
 root -l 'final_codes/genrateplot_responsevsEta_UL.C("EH hadrons","EH",false,true)'
 ```
+
+All plots will be saved in ```plots``` directory.
