@@ -59,3 +59,4 @@ root -l 'final_codes/genrateplot_responsevsEta_UL.C("EH hadrons","EH",true,false
 root -l 'final_codes/genrateplot_responsevsEta_UL.C("H hadrons","H",false,true)'
 root -l 'final_codes/genrateplot_responsevsEta_UL.C("EH hadrons","EH",false,true)'
 ```
+All plots will be saved in ```plots``` directory.
