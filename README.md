@@ -3,6 +3,7 @@
 This repository includes overlay scripts for final corrected energy responses wrt raw or only energy corrected energy responses.
 ```
 git clone -b JERC_plotting_scripts https://github.com/bkansal/PFHC_Ultralegacy.git
+cd PFHC_Ultralegacy
 ```
 
 For running overlay script, use following commands :
