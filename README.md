@@ -50,7 +50,8 @@ root -l -q 'final_codes/genrateplot_responsevsE_UL.C("H hadrons (0 < |#eta| <1.5
 root -l -q 'final_codes/genrateplot_responsevsE_UL.C("H hadrons (1.55 < |#eta| <2.5) for Ultralegacy ","H_ec_in",false,false,false)'
 root -l -q 'final_codes/genrateplot_responsevsE_UL.C("H hadrons (2.5 < |#eta| <2.75) for Ultralegacy ","H_ec_out",false,false,false)'
 ```
-To get resolution wrt true energy, similar commands but ```final_codes/genrateplot_resovsE_UL.C``` instead of ```final_codes/genrateplot_responsevsE_UL.C``` will be used.
+To get resolution wrt true energy, similar commands but ```final_codes/genrateplot_resovsE_UL.C``` instead of ```final_codes/genrateplot_responsevsE_UL.C``` will be used. In order to get the x axis as pT true insted of true energy, just change the third last boolean in above functions as ```false```.
+
 
 (for final Eta-Energy & Energy corrected response wrt true energy only having UL overlay)
 ```
