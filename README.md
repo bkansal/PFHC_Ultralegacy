@@ -1,4 +1,4 @@
-A# PFHC_Ultralegacy
+# PFHC_Ultralegacy
 
 This repository includes overlay scripts for final corrected energy responses wrt raw or only energy corrected energy responses.
 
